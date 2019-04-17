@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <!--Provide Links for bootsrap JQUREY and FontAwesome-->
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</header>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr class="my-4">
+        <h3><strong>About You</strong></h3>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="link">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="link" placeholder="Link">
+            </div>
+        </form>
+        <hr class="my-4">
+        <!--Create a drop down box to allow the user to decide how they feel based on the question-->
+        <h3><strong>Question 1</strong></h3>
+
+        <legend>Do you enjoy outdoor activities?</legend>
+        <p>
+            <select name="select one" id="q1">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 2</strong></h3>
+
+        <legend>Do you enjoy playing Video Games?</legend>
+        <p>
+            <select name="select one" id="q2">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 3</strong></h3>
+
+        <legend>Do you consider yourself an Introvert?</legend>
+        <p>
+            <select name="select one" id="q3">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 4</strong></h3>
+
+        <legend>Do you approve of tattoos? </legend>
+        <p>
+            <select name="select one" id="q4">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 5</strong></h3>
+
+        <legend>Do you enjoy going to live music shows?</legend>
+        <p>
+            <select name="select one" id="q5">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 6</strong></h3>
+
+        <legend>Did you save money by bundling home and auto insurance?</legend>
+        <p>
+            <select name="select one" id="q6">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 7</strong></h3>
+
+        <legend>Do you ever think about Black Holes and human existence?</legend>
+        <p>
+            <select name="select one" id="q7">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 8</strong></h3>
+
+        <legend>Do you enjoy spending quality time with friends and family?</legend>
+        <p>
+            <select name="select one" id="q8">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 9</strong></h3>
+
+        <legend>Do you get Overwhelmed easy?</legend>
+        <p>
+            <select name="select one" id="q9">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <h3><strong>Question 10</strong></h3>
+
+        <legend>Do you believe in the possibility of alient life-forms?</legend>
+        <p>
+            <select name="select one" id="q10">
+                <option>Choose one</option>
+                <option value="1">1 (strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+        </p>
+
+        <!--Create a submit button for the user so when it is clicked it will reset the page -->
+        <a class="btn btn-primary btn-lg " id="submit" role="button"><i class="fas fa-list-alt"></i> submit</a>
+
+
+    </div>
+
+</body>
+
+<script>
+    //When the submit button is clicked input the data into an object 
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        //create an empty array to hold all of the results from the users inputs
+        var answerArry = [];
+        var count = 1;
+
+        //run the results through an array and convert every string to an integer
+        for (var i= 0; i < 10; i++){
+            answerArry[i] = parseInt(($("#q" + count).val()));
+            count++;
+        }
+        
+        //store the information recived from the user in an object to be posted
+        var newFriend = {
+            name: $("#name").val(),
+            link: $("#link").val(),
+            choices: answerArry
+        }
+
+        console.log(newFriend);
+    })
+</script>
+
+</html>
