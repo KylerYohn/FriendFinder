@@ -2,18 +2,24 @@
 <html>
 <header>
     <!--Provide Links for bootsrap JQUREY and FontAwesome-->
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+
+
     <!--JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--FONTAWESOME-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
 </header>
 
 <body>
@@ -38,7 +44,7 @@
         <legend>Do you enjoy outdoor activities?</legend>
         <p>
             <select name="select one" id="q1">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -52,7 +58,7 @@
         <legend>Do you enjoy playing Video Games?</legend>
         <p>
             <select name="select one" id="q2">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -66,7 +72,7 @@
         <legend>Do you consider yourself an Introvert?</legend>
         <p>
             <select name="select one" id="q3">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -80,7 +86,7 @@
         <legend>Do you approve of tattoos? </legend>
         <p>
             <select name="select one" id="q4">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -94,7 +100,7 @@
         <legend>Do you enjoy going to live music shows?</legend>
         <p>
             <select name="select one" id="q5">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -108,7 +114,7 @@
         <legend>Did you save money by bundling home and auto insurance?</legend>
         <p>
             <select name="select one" id="q6">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -122,7 +128,7 @@
         <legend>Do you ever think about Black Holes and human existence?</legend>
         <p>
             <select name="select one" id="q7">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -136,7 +142,7 @@
         <legend>Do you enjoy spending quality time with friends and family?</legend>
         <p>
             <select name="select one" id="q8">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -150,7 +156,7 @@
         <legend>Do you get Overwhelmed easy?</legend>
         <p>
             <select name="select one" id="q9">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -164,7 +170,7 @@
         <legend>Do you believe in the possibility of alient life-forms?</legend>
         <p>
             <select name="select one" id="q10">
-                <option>Choose one</option>
+                <option value="0">Choose one</option>
                 <option value="1">1 (strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -173,37 +179,113 @@
             </select>
         </p>
 
-        <!--Create a submit button for the user so when it is clicked it will reset the page -->
-        <a class="btn btn-primary btn-lg " id="submit" role="button"><i class="fas fa-list-alt"></i> submit</a>
+        <!--Create a modal to pop up once the user clicks commit-->
 
+
+        <!--Create a submit button for the user so when it is clicked it will reset the page -->
+        <!-- <a class="btn btn-primary btn-lg " id="submit" role="button"><i class="fas fa-list-alt"></i> submit</a> -->
+        <button type="button" id="submit" class="btn btn-primary">
+            Submit!
+        </button>
+        <div class="modal fade" id="friend-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Your Friend Match!
+                    </div>
+                    <div class="modal-body">
+                        <h4 id="pal">This will get replaced</h4>
+                        <img id="pic" src="..." alt="friend-image!" style="max-width: 400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 
+
 </body>
 
+</html>
 <script>
-    //When the submit button is clicked input the data into an object 
+
+    //declare the answerArry globally so it can be acessed by all functions
+    var answerArry = [];
+    // When the submit button is clicked input the data into an object 
     $("#submit").on("click", function (event) {
         event.preventDefault();
+
+        //every time the submit button is clicked it will empty the answer array
+        answerArry = [];
+
         //create an empty array to hold all of the results from the users inputs
-        var answerArry = [];
         var count = 1;
 
         //run the results through an array and convert every string to an integer
-        for (var i= 0; i < 10; i++){
+        for (var i = 0; i < 10; i++) {
             answerArry[i] = parseInt(($("#q" + count).val()));
             count++;
         }
-        
+
+
+
+
+        //first we must validate the users choices and make sure all where completed
+        if ($("#name").val().trim() === "" || ($("#link").val().trim() === "")) {
+            //if the user did leave something blank it will notify them
+            alert("you have left something blank!");
+        }
+        else {
+            //next run the checkselectionFields function to validate that every input was answered
+            if (checkSelectionFields() === true) {
+                //if the statement returns true then call the post function and post
+                post()
+            }
+            else {
+                //if it returns false it will allow the user to go back and check to make sure that they answered all questions
+                alert("you did not answer a question!");
+            }
+
+        }
+
+
+
+    })
+    var checkSelectionFields = function () {
+
+        //create a for loop to sort through all of the selection fields
+        for (var s = 0; s < answerArry.length; s++) {
+            //if it = 0 then that means they did not answer a question and will return false
+            if (answerArry[s] === 0) {
+                return false
+            }
+            //if not then it will return true!
+            else {
+                return true
+            }
+        }
+
+    }
+
+    var post = function () {
         //store the information recived from the user in an object to be posted
         var newFriend = {
             name: $("#name").val(),
             link: $("#link").val(),
             choices: answerArry
         }
+        //post to an api route for the server and other java files to acess
 
-        console.log(newFriend);
-    })
+        $.post("/api/friends", newFriend, function (data) {
+            $("#pal").text(data.bestName);
+            $("#pic").attr('src', data.bestLink);
+            $("#friend-modal").modal("toggle");
+        })
+    }
+
+
 </script>
-
-</html>
